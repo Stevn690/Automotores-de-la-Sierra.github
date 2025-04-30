@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería - (ASSA) Automotores de la Sierra S.A.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #dfefff, #b3cde0);
+      overflow-y: scroll;
+      box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: double 5px #004080;
+      background-color: white;
+    }
+    header img {
+      height: 80px;
+      filter: grayscale(30%) drop-shadow(2px 2px 5px gray);
+      transform: rotateY(10deg);
+      transition: transform 1s ease;
+    }
+    header img:hover {
+      transform: rotateY(360deg);
+    }
+    header h1 {
+      background: linear-gradient(90deg, #0c0b52, #65bae4);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 2em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+      background-color: #004080;
+      border: double 4px #002244;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #0066cc;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #003366;
+      transform: scale(1.1);
+    }
+    section {
+      margin: 30px;
+      padding: 20px;
+      background-color: white;
+      border: double 4px #004080;
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+      transform: perspective(800px) rotateZ(2deg);
+      transition: transform 0.5s ease;
+    }
+    section:hover {
+      transform: perspective(800px) rotateX(0deg);
+    }
+    .content-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .content-row img {
+      width: 600px;
+      filter: sepia(20%) brightness(1.1);
+    }
+    .description {
+      max-width: 400px;
+      color: #003366;
+    }
+    section h2 {
+      color: #004080;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #002244;
+      color: white;
+      border-top: double 4px #001122;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assa logo azul blan.avif" alt="Logo del Sindicato" />
+    <h1>Tipos de Carrocerias de la empresa</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Autos</a>
+    <a href="camione.html">Camionetas</a>
+    <a href="camioness.html">Camiones</a>
+    <a href="caratula.html">Inicio</a>
+  </nav>
+  <section id="imagen2">
+    <h2>Camionetas</h2>
+    <div class="content-row">
+      <img src="camione.jpg" alt="Licencia Tipo D" />
+      <div class="description">
+        <p>Balde exclusivo Multi-Flex
+          El exclusivo balde Multi-Flex tiene una capacidad de 874 L de carga y 8 ganchos de amarre, garantizando aún más espacio. Además, la lona marina ofrece el mejor sellado contra el agua de la categoría y las divisiones Multi-Board cuentan con 6 opciones de acomodación del balde. ¡Descubre la funcionalidad y practicidad que vienen junto a tu Montana!
+          
+          ​​*Testeo realizado con otros vehículos de la categoría​.
+          
+          **Accesorios disponibles en la red de concesionarios Chevrolet.​</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 (ASSA) Automotores de la Sierra S.A. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
